@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SubmissionStageController">
+   <children>
+      <TextArea fx:id="code" layoutX="53.0" layoutY="199.0" prefHeight="309.0" prefWidth="383.0" />
+      <Text layoutX="197.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="提交代码" wrappingWidth="96.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="649.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="运行结果" wrappingWidth="96.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="result" layoutX="624.0" layoutY="223.0" />
+      <Text layoutX="480.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="结果状态" wrappingWidth="96.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="memory" layoutX="625.0" layoutY="379.0" />
+      <Text layoutX="480.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="内存消耗" wrappingWidth="96.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="runtime" layoutX="625.0" layoutY="456.0" />
+      <Text layoutX="480.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="时间消耗" wrappingWidth="96.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="310.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="提交号" wrappingWidth="96.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="submission_id" layoutX="408.0" layoutY="44.0" />
+      <Text layoutX="480.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="提示信息" wrappingWidth="96.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="run" layoutX="624.0" layoutY="44.0" mnemonicParsing="false" onAction="#handleButtonActionRun" text="Compile&amp;Run!" />
+      <TextArea fx:id="info" layoutX="625.0" layoutY="270.0" prefHeight="81.0" prefWidth="144.0" />
+   </children>
+</AnchorPane>
